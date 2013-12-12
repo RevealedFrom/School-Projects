@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" href="SzablyaStyle.css" />
+<title>
+</title>
+
+	<h1 id="bannerBG1">
+    <br />
+	Welcome to my classy Resume!
+	</h1>	
+    
+</head>
+<body>
+<div id="navigation" >
+	<nav>
+		<a href="Main.html">My Home</a>  | 
+		<a href="portfolio.html">My Portfolio</a>
+	</nav>
+</div>
+<img id="resumepic" src="images/GetRammed2013-37.jpg" alt="bandana man" align="right"  />
+
+<pre >
+<h2>Adam Szablya
+szablya(at)gmail.com
+
+Skills/Abilities:</h2>
+   •   Network Pro Certified
+   •   CCNA in progress
+   •   Worked with CentOS, Ubuntu and Windows.  
+   •   Worked with F5 BigIP LTM, HP and Dell servers, routers, and other networking equipment. 
+   •   Languages: C#, C++, Python, JavaScript, SQL, HTML, HTML5, XML, XUL, BASH  
+   •   Worked with SQL Server, DreamWeaver, and Visual Studio  
+   •   Worked with vSphere, vCloud Director, and related API's 
+   •   F5 product development Lab project coordination  
+   •   Trained in electrical repair, inspection, and diagnostic procedures. 
+   •   CPR and AED Certified  
+
+
+<h2>Education:</h2>
+
+<strong>2015</strong> Bachelors of Sciences of information systems in Application Development 
+	 Bellevue College, Bellevue, WA 
+
+            
+<strong>2011</strong>		Automotive General Service Technician Certificate 
+     Shoreline Community College, Shoreline, WA 
+
+<h2>Work History:</h2>
+<strong>Technical Intern in Product Development - F5 Networks, Seattle, WA </strong>>
+09/2013 – Current 
+   •   Help install new hardware and infrastructure in the PD Lab  
+   •   Assist in programming scripts for the virtual lab using the vCloud API.  
+   •   Project management for problem resolution with vendors.  
+   •   Monitor and report virtual lab resources.  
+   •   Set up new KVM connections for User-base in the PD Lab 
+   •   Install new Power distribution units for the lab  
+
+<strong>IT Technician and Service Representative - Barrier Audi, Bellevue, WA </strong>
+05/11 – 09/2013 
+   •   Create and review diagnostic documentation  
+   •   Re-image desktops and laptops for deployment 
+   •   Decommission hardware and recycle components  
+   •   Work as a team with the IT department on special projects  
+   •   Repair and Upgrade hardware components 
+   •   Provide solutions for clients  
+   •   Recieved phone calls for parts and service.  
+
+<strong>Service Representative -     Renton Honda, Renton, WA </strong>
+05/09 – 05/11 
+   •    Efficiently use CRM software to set appointments for clients 
+   •    Answer phone calls in a high volume environment  
+   •    Recommend services to customers  
+   •    Provided first contact customer service  
+
+</pre>
+
+<div id="microtext">
+"Never gonna give you up,
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry,
+Never gonna say goodbye
+Never gonna tell a lie and hurt you" ~Rick Astley
+</div>
+
+    
+
+</body>
+</html>
