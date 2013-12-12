@@ -1,0 +1,111 @@
+<!DOCTYPE html5 PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Adam's craps game</title>
+
+	<link rel="stylesheet" type="text/css" href="Formatting.css" />
+
+	<script type="text/javascript" src="rules.js" > </script>
+
+</head>
+
+<body bgcolor="blue" onload="getReady();"> <!--Background-->
+
+<!-- this section is for the outcome graphics-->
+<div>
+    <div id="game"></div>
+    <div id="winner" style="display:none"></div>
+    <div id="loser" style="display:none"></div>
+
+
+
+<div id="startRound">
+
+<h1 style="margin:auto">lets play craps!</h1>
+<h2 style="margin:auto">Place your bet!</h2>
+
+	<form>
+    	<input type="text" id="bettingvalue" value="0" onkeydown="if (event.keyCode == 13) document.getElementById('gamebutton').click()"/>
+    	<input type="text" id="bettingvalue" style="display:none;" />
+    	<input type="button" value="Bet" onClick="theBet();" id="gamebutton" style="display:block; margin:auto"/> 
+	  <input type="button" value="Bet1" onClick="winningCond();" id="gamebutton1" style="display:none;"/>
+  </form>
+
+	    <h1>stash:</h1> 
+        <h2 id="money"></h2> 
+</div>
+
+
+<!-- This section is for the game -->
+<div id="GameBG">
+
+	<form name="myForm"> 
+
+		<!--<input type="button" value="Craps" onClick="fullgame();" id="gamebutton" style="display:block; margin:auto;"/> 
+        
+        <input type="button" value="Craps" onClick="winningCond()" id="gamebutton1" style="display:none; margin:auto;"/> 
+		<br /><br /> -->
+		
+			<h3 id="twoDieTotal" style="display:block; margin:auto;"> </h3> 
+ 		
+        	<input type="text" id="die1Value" style="display:none; z-index:-1;" /> 
+ 			<input type="text" id="die2Value" style="display:none; z-index:-1;" />
+	</form>
+<br /><br />
+<img src="dice/die1.png" alt="die1 image" width="100" height="100" id="imageDisplay" />
+<img src="dice/die1.png" alt="die2 image" width="100" height="100" id="imageDisplay2" />
+<br />
+	<h1>follow the point</h1>
+  		 <div id="point2">point</div>
+    
+
+<!--
+<form>
+<input type="button" onclick="firstgame();" value="hide game" id="gamebutton" />
+<br />
+<input type="button" onclick="showgame(); " value="show game" id="showbutton"/>
+</form>
+-->
+</div>
+<div id="thebet" style="display:none">
+</div>
+
+
+
+
+<div id="gameover">
+<h1>GAME OVER!</h1>
+<img src="graphics/loser.jpg" />
+
+<form>
+
+	<input type="button" value="Play Again!" onclick="newgame();" />
+
+</form>
+	<audio controls="controls"  id="getnothing">
+    </br>
+    	<source src="sound/yougetnothing.mp3" type="audio/mp3" >
+    </audio>
+	
+</div>
+
+
+<div id="gamestart">
+<h1>WELCOME!</h1>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/BSgUxxl_tJU" frameborder="0" allowfullscreen></iframe>
+<form>
+
+	<input type="button" value="LETS PLAY CRAPS" onclick="newgame();" />
+	
+</form>
+</div>
+
+
+</div>
+
+
+
+
+</body>
+</html>
