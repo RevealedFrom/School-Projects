@@ -1,0 +1,58 @@
+#! /bin/python3.3/
+import argparse
+import configparser
+import getpass
+import sys
+import urllib
+from lxml import objectify, etree
+import json
+from xml.etree import ElementTree as ET
+
+#""" start authentication """
+sys.path.append("Lib")
+from vCloudSessionObj import vCloudSessionObj
+from vCloudRequestObj import vCloudRequestObj
+
+def get_parser():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-H', '--hostname')
+    #print("-h")
+    parser.add_argument('-u', '--username')
+    #print("-u")
+    parser.add_argument('-o', '--organization', required=True)
+    #print("-o")
+    return parser 
+#print("into parser")
+
+#python
+
+if __name__ == '__main__':
+    args = get_parser().parse_args()
+    sessionObj = vCloudSessionObj( args.hostname,args.username,getpass.getpass(), args.organization)
+    validity = sessionObj.is_valid()
+    if validity is False:
+        print("Login Failed")
+        sys.exit()
+
+    requestObj = vCloudRequestObj(sessionObj)
+
+    QueryResultRecords = requestObj.get('/api/admin/extension/vapps/query')
+
+
+
+#"""start new process... create new vApp"""
+def getcatalog():
+	
+	GET /catalogs/query  # this will make a list of catalogues to choose from
+		
+	catalogID = raw_input("please enter the catalogue id: ")   #"""for inputting the catalog id"""
+	
+	#"""makes use of the catalogID variable from the raw input and gets the selected catalogue"""
+	GET /catalog/catalogID  
+
+	
+def GetNewVapp():
+
+	vappID = raw_input("please enter the vApp ID: ")  #"""for inputting the vApp ID"""
+	POST /vApp/vappID/action/deploy 	#"""api call to deploy the catalogued vApp ID"""
+	
